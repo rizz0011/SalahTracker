@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SalahTrac/static/css/main.84e2da0e.css",
+    "main.js": "/SalahTrac/static/js/main.6c9d7514.js",
+    "index.html": "/SalahTrac/index.html",
+    "main.84e2da0e.css.map": "/SalahTrac/static/css/main.84e2da0e.css.map",
+    "main.6c9d7514.js.map": "/SalahTrac/static/js/main.6c9d7514.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84e2da0e.css",
+    "static/js/main.6c9d7514.js"
+  ]
+}
