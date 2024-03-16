@@ -89,7 +89,7 @@ function SalahTime() {
   const fetchData = async () => {
     setLoading(true);
     const response = await axios.get(
-      "http://api.aladhan.com/v1/timingsByCity",
+      "https://api.aladhan.com/v1/timingsByCity",
       {
         params: {
           city: state.city,
