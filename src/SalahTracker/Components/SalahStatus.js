@@ -104,7 +104,7 @@ function SalahStatus() {
             </Grid>
 
             <Grid item sm={12} xs={12} sx={{ mt: 4 }}>
-              <Typography textAlign='center' sx={{ mb:"15px"}}>Which Salah You Have Completed </Typography>
+              <Typography textAlign='center' sx={{ mb:"15px"}}>Please check which one you have completed</Typography>
 
               <li style={list}>
                 <span>Fajr</span>

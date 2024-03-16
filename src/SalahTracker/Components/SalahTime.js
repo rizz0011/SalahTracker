@@ -15,6 +15,7 @@ import Select from "@mui/material/Select";
 import CircularProgress from "@mui/material/CircularProgress";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import DigitalClock from "./DigitalClock";
 
 const codeData = [
   {
@@ -133,6 +134,7 @@ function SalahTime() {
               >
                 Salah Timing & Tracker
               </Typography>
+              <DigitalClock />
             </Grid>
             <Grid item sm={12} xs={12}>
               <FormControl fullWidth>
