@@ -69,7 +69,7 @@ function MonthalyPrayerTime() {
     try {
         setLoading(true);
         const response = await axios.get(
-          "http://api.aladhan.com/v1/calendarByCity",
+          "https://api.aladhan.com/v1/calendarByCity",
           {
             params: {
               city: state.city,
