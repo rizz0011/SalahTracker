@@ -5,6 +5,7 @@ import Tab from "@mui/material/Tab";
 import {
   Box,
   Card,
+  Typography,
 
 } from "@mui/material";
 import SalahTime from "../SalahTime";
@@ -55,10 +56,11 @@ export default function TabBar() {
               value={value}
               onChange={handleChange}
               aria-label="basic tabs example"
+              sx={{backgroundImage: "linear-gradient(to right, #4facfe, #00f2fe)"}}
             >
-              <Tab label="Salah" {...a11yProps(0)} />
-              <Tab label="Status" {...a11yProps(1)} />
-              <Tab label="Month" {...a11yProps(2)} />
+              <Tab label={<Typography sx={{fontSize:'14px', fontWeight:'600', color:'white' }}> Salah</Typography>} {...a11yProps(0)} />
+              <Tab label={<Typography sx={{fontSize:'14px', fontWeight:'600', color:'white' }}> Status</Typography>} {...a11yProps(1)} />
+              <Tab label={<Typography sx={{fontSize:'14px', fontWeight:'600', color:'white' }}> Month</Typography>} {...a11yProps(2)} />
             </Tabs>
           </Box>
           <CustomTabPanel value={value} index={0}>

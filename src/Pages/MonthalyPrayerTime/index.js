@@ -66,21 +66,28 @@ function MonthalyPrayerTime() {
   };
 
   const fetchData = async () => {
-    setLoading(true);
-    const response = await axios.get(
-      "http://api.aladhan.com/v1/calendarByCity",
-      {
-        params: {
-          city: state.city,
-          country: state.countryCode,
-          month: state?.month,
-          year: state?.year,
-          method: "1",
-        },
-      }
-    );
-    console.log(response, "yeegve----");
-    setPrayerData(response?.data?.data);
+    try {
+        setLoading(true);
+        const response = await axios.get(
+          "http://api.aladhan.com/v1/calendarByCity",
+          {
+            params: {
+              city: state.city,
+              country: state.countryCode,
+              month: state?.month,
+              year: state?.year,
+              method: "1",
+            },
+          }
+        );
+        setPrayerData(response?.data?.data);
+    } catch (error) {
+        console.log(error, "error")
+    }
+    finally{
+        setLoading(false)
+    }
+
     setLoading(false);
   };
 
