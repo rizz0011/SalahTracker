@@ -1,10 +1,11 @@
-import Salah from './SalahTracker';
+
+import TabBar from "./Pages/TabBar";
 
 function App() {
   return (
-    <div >
-     <Salah/>
-    </div>
+    <>
+     <TabBar/>
+    </>
   );
 }
 
